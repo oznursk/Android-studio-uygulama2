@@ -1,0 +1,66 @@
+<!-- res/layout/about.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/hireme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hakkımda"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Your Profile Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profil"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:id="@+id/mailLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingTop="70dp"
+        android:paddingBottom="8dp"
+        android:text="İletişim:  soznursk@gmail.com"
+        android:layout_marginStart="70dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/githubLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GitHub"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:paddingTop="15dp"
+        android:paddingBottom="16dp"
+        android:layout_marginStart="70dp"
+        android:clickable="true"
+        android:onClick="openGitHubProfile" />
+    <TextView
+        android:id="@+id/linkedinLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="openLinkedInProfile"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="70dp"
+        android:text="LinkedIn"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+</LinearLayout>
